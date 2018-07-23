@@ -8,8 +8,6 @@ layout: page
 <div>
 	<h2>{{post.title}}</h2>
 	<p> {{post.excerpt}}</p>
-	<a href="{{post.url | prepend: site.baseurl}}">
-			Leer más
-	</a>
+	<a href="{{post.url | prepend: site.baseurl}}">Leer más	</a>
 </div>
 { % endfor %}
