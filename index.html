@@ -2,4 +2,14 @@
 layout: page
 ---
 
-<h2>Esto está escrito en el index.html</h2>
+{% for post in site.posts %}
+<div>
+{{post.title}}
+<h2>{{post.title}}</h2>
+	<p> {{post.excerpt}}</p>
+		<a href="{{post.url | prepend: site.baseurl}}">
+			Leer más
+
+		</a>
+</div>
+{ % endfor %}
