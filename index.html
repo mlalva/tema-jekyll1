@@ -4,8 +4,8 @@ layout: page
 
 {% for post in site.posts %}
 <div>
-{{post.title}}
 <h2>{{post.title}}</h2>
+{{post.title}}
 	<p> {{post.excerpt}}</p>
 		<a href="{{post.url | prepend: site.baseurl}}">
 			Leer más
