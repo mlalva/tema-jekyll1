@@ -1,13 +1,14 @@
 ---
 layout: page
 ---
+<div class="conteiner">
+	<h1>Listado de entradas del blog</h1>
 
-<h1>Listado de entradas del blog</h1>
-
-{% for post in site.posts %}
-<div>
-	<h2>{{post.title}}</h2>
-	<p> {{post.excerpt}}</p>
-	<a href="{{post.url | prepend: site.baseurl}}">Leer más	</a>
+	{% for post in site.posts %}
+	<div>
+		<h2>{{ post.title }}</h2>
+		<p> {{ post.excerpt }}</p>
+		<a href="{{ post.url | prepend: site.baseurl }}">Leer más	</a>
+	</div>
+	{ % endfor %}
 </div>
-{ % endfor %}
