@@ -1,0 +1,17 @@
+
+
+body{
+	font-family: courier, arial;
+}
+.cabecera{
+	height: 200px;
+	font-size: 24px;
+	background-color: tomato;
+	color: white;
+}
+.cabecera a {
+	text-decoration: none;
+}
+.cabecera a:hover{
+	color:gray;
+}
