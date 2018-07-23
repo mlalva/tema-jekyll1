@@ -2,14 +2,14 @@
 layout: page
 ---
 
+<h1>Listado de entradas del blog</h1>
+
 {% for post in site.posts %}
 <div>
-<h2>{{post.title}}</h2>
-{{post.title}}
+	<h2>{{post.title}}</h2>
 	<p> {{post.excerpt}}</p>
-		<a href="{{post.url | prepend: site.baseurl}}">
+	<a href="{{post.url | prepend: site.baseurl}}">
 			Leer más
-
-		</a>
+	</a>
 </div>
 { % endfor %}
